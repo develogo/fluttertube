@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:fluttertube/delegate/data_search.dart';
 
 class Home extends StatelessWidget {
   @override
@@ -27,7 +28,7 @@ class Home extends StatelessWidget {
             icon: Icon(Icons.search),
             color: Colors.white,
             onPressed: (){
-
+              showSearch(context: context, delegate: DataSearch());
             },
           )
         ],
